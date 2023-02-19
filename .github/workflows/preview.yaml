@@ -16,10 +16,7 @@ jobs:
         with:
           template: '@asyncapi/html-template@0.9.0'
           filepath: ${{ github.workspace }}/a/b/c/TestMessage.yaml
-          
-      - name: Install rsync 📚
-        run: |
-          apt-get update && apt-get install -y rsync
+          output: generated-html
           
       #Using another action that takes generated HTML and pushes it to GH Pages
       - name: Deploy GH page

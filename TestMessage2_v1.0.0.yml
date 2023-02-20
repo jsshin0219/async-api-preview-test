@@ -1,0 +1,37 @@
+asyncapi: 2.0.0
+info:
+  title: Test Message 2
+  version: 1.0.0
+  description: Test Message 2
+
+components:
+  messages:
+    TestMessage2Object:
+      payload:
+        type: object
+        properties:
+          Version:
+            type: string
+            example: 1.0.0
+            description: Schema version
+          DateTime:
+            type: string
+            format: dateTime
+            examples:
+              - "2022-09-29T07:10:15.520Z"
+            description: date & time
+          TestMessage2:
+            type: object
+            properties:
+              NewValue1:
+                type: number
+                format: float
+                examples:
+                  - 20.0
+                description: value1 of test message
+              NewValue2:
+                type: number
+                format: float
+                examples:
+                  - 10.0
+                description: value1 of test message

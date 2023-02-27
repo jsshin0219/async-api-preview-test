@@ -10,19 +10,12 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-      
-      - name: Generating HTML from TestMessage
-        uses: docker://asyncapi/github-action-for-generator:2.0.0
-        with:
-          template: '@asyncapi/html-template@0.9.0'
-          filepath: ${{ github.workspace }}/a/b/c/TestMessage.yaml
-          output: generated-html
-          
+
       - name: Generating HTML from TestMessage2
         uses: docker://asyncapi/github-action-for-generator:2.0.0
         with:
           template: '@asyncapi/html-template@0.9.0'
-          filepath: ${{ github.workspace }}/a/b/c/TestMessage2.yaml
+          filepath: ${{ github.workspace }}/a/b/c/one.yaml
           output: generated-html
           
       #Using another action that takes generated HTML and pushes it to GH Pages

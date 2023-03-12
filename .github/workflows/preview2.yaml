@@ -1,4 +1,4 @@
-name: AsyncAPI documents processing
+name: AsyncAPI documents processing #2
 
 on:
   push:

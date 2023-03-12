@@ -23,13 +23,13 @@ components:
           TestMessage3:
             type: object
             properties:
-              NewValue3:
+              NewValue:
                 type: number
                 format: float
                 examples:
                   - 20.0
                 description: value3 of test message
-              NewValue3:
+              NewValue2:
                 type: number
                 format: float
                 examples:

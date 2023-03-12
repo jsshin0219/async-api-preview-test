@@ -1,0 +1,18 @@
+asyncapi: 2.0.0
+info:
+  title: a/b/c/TestMessage3
+  version: 1.0.0
+  description: a/b/c/TestMessage3
+servers:
+  mqttv5:
+    url: mqtt://127.0.0.1:1883
+    description: Production
+    protocol: mqtt
+    protocolVersion: '5.0'
+channels:
+  a/b/c/TestMessage3:
+    publish:
+      message:
+        name: Test Message 3
+        description: Test Message 3
+        $ref: '../../../TestMessage3_v1.0.0.yml#/components/messages/TestMessage3Object'
